@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Menu_Planning_Problem}
+\author{joel.chacon }
+\date{January 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[]
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|}
+\cline{2-10}
+ & \multicolumn{3}{c|}{\textbf{20Days}} & \multicolumn{3}{c|}{\textbf{40Days}} & \multicolumn{3}{c|}{\textbf{60Days}} \\ \cline{2-10} 
+ & \textbf{Best} & \textbf{Worst} & \textbf{Mean} &\textbf{Best} & \textbf{Worst} & \textbf{Mean} & \textbf{Best} & \textbf{Worst} & \textbf{Mean} \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg1}} & 20.265 & 20.265 & 20.265 & 0.000 & 40.038 & 40.067 & 40.059 & 0.013 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg2}} & 20.265 & 20.265 & 20.265 & 0.000 & 40.038 & 40.282 & 40.072 & 0.040 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg3}} & 20.265 & 20.460 & 20.297 & 0.072 & 40.067 & 40.434 & 40.260 & 0.135 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg4}} & 20.265 & 20.460 & 20.271 & 0.035 & 40.067 & 40.409 & 40.183 & 0.134 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg5}} & 20.265 & 20.265 & 20.265 & 0.000 & 40.038 & 40.339 & 40.088 & 0.072 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg6}} & 20.265 & 20.265 & 20.265 & 0.000 & 40.038 & 40.282 & 40.080 & 0.054 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg7}} & 20.265 & 20.265 & 20.265 & 0.000 & 40.038 & 40.339 & 40.151 & 0.120 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg8}} & 20.265 & 20.265 & 20.265 & 0.000 & 40.067 & 40.427 & 40.154 & 0.135 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg9}} & 20.265 & 20.469 & 20.297 & 0.073 & 40.067 & 40.434 & 40.249 & 0.125 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg10}} & 20.265 & 20.460 & 20.290 & 0.064 & 40.038 & 40.434 & 40.233 & 0.150 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg11}} & 20.265 & 20.265 & 20.265 & 0.000 & 40.038 & 40.282 & 40.068 & 0.042 & 59.721 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg12}} & 20.265 & 20.265 & 20.265 & 0.000 & 40.038 & 40.427 & 40.098 & 0.091 & 59.721 \\ \hline
+\end{tabular}
+\end{table}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[]
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\cline{2-13}
+ & \multicolumn{4}{c|}{\textbf{20Days}} & \multicolumn{4}{c|}{\textbf{40Days}} & \multicolumn{4}{c|}{\textbf{60Days}} \\ \cline{2-13} 
+ & \textbf{$\uparrow$} & \textbf{$\downarrow$} & \textbf{$\leftrightarrow$} & \textbf{Score} &\textbf{$\uparrow$} & \textbf{$\downarrow$} & \textbf{$\leftrightarrow$} & \textbf{Score} & \textbf{$\uparrow$} & \textbf{$\downarrow$} & \textbf{$\leftrightarrow$} & \textbf{Score} \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg1}} & 3 & 0 & 8 & 3 & 10 & 0 & 1 & 10 & 9 & 0 & 2 & 9 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg2}} & 3 & 0 & 8 & 3 & 6 & 1 & 4 & 5 & 1 & 3 & 7 & -2 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg3}} & 0 & 8 & 3 & -8 & 0 & 8 & 3 & -8 & 1 & 3 & 7 & -2 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg4}} & 0 & 0 & 11 & 0 & 0 & 6 & 5 & -6 & 1 & 3 & 7 & -2 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg5}} & 3 & 0 & 8 & 3 & 5 & 1 & 5 & 4 & 9 & 0 & 2 & 9 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg6}} & 3 & 0 & 8 & 3 & 5 & 2 & 4 & 3 & 1 & 3 & 7 & -2 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg7}} & 3 & 0 & 8 & 3 & 3 & 3 & 5 & 0 & 1 & 3 & 7 & -2 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg8}} & 3 & 0 & 8 & 3 & 2 & 5 & 4 & -3 & 1 & 4 & 6 & -3 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg9}} & 0 & 8 & 3 & -8 & 0 & 8 & 3 & -8 & 2 & 3 & 6 & -1 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg10}} & 0 & 8 & 3 & -8 & 0 & 7 & 4 & -7 & 1 & 3 & 7 & -2 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg11}} & 3 & 0 & 8 & 3 & 8 & 0 & 3 & 8 & 9 & 0 & 2 & 9 \\ \hline
+\multicolumn{1}{|c|}{\textbf{Alg12}} & 3 & 0 & 8 & 3 & 4 & 2 & 5 & 2 & 0 & 11 & 0 & -11 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Label} & \textbf{Algorithm} \\ \hline
+\textbf{Alg1} & BNP\_PairBasedCrossover\_0.5 \\ \hline
+\textbf{Alg2} & BNP\_Uniform\_0.5 \\ \hline
+\textbf{Alg3} & CDRW\_PairBasedCrossover \\ \hline
+\textbf{Alg4} & CDRW\_Uniform \\ \hline
+\textbf{Alg5} & COMB\_3\_3\_PairBasedCrossover \\ \hline
+\textbf{Alg6} & COMB\_3\_3\_Uniform \\ \hline
+\textbf{Alg7} & Crowding\_5\_PairBasedCrossover \\ \hline
+\textbf{Alg8} & Crowding\_5\_Uniform \\ \hline
+\textbf{Alg9} & Generational\_PairBasedCrossover \\ \hline
+\textbf{Alg10} & Generational\_Uniform \\ \hline
+\textbf{Alg11} & RMDDC\_PairBasedCrossover\_0.5 \\ \hline
+\textbf{Alg12} & RMDDC\_Uniform\_0.5 \\ \hline
+\end{tabular}
+\end{table}
+
+\end{document}
